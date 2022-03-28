@@ -8,7 +8,7 @@ html {
 
 .blob {
   background-image: radial-gradient(
-    circle 800px at 300px 100px,
+    circle 500px at 400px 30px,
     hsl(197, 57%, 18%),
     hsl(0 0% 0.5%)
   );
@@ -17,7 +17,17 @@ html {
 @media screen and (max-width: 640px) {
   .blob {
     background-image: radial-gradient(
-      circle 600px at 0px 130px,
+      circle 400px at 80px 50px,
+      hsl(197, 57%, 18%),
+      hsl(0 0% 0.5%)
+    );
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .blob {
+    background-image: radial-gradient(
+      circle 500px at 100px 50px,
       hsl(197, 57%, 18%),
       hsl(0 0% 0.5%)
     );
