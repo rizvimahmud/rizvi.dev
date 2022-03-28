@@ -1,0 +1,104 @@
+code[class*="language-"],
+pre[class*="language-"] {
+  @apply text-slate-800 dark:text-slate-100;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  font-size: 1em;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+pre {
+  scrollbar-width: none;
+}
+
+.prose pre {
+  @apply bg-black border border-slate-7;
+}
+
+.prose code {
+  @apply text-cyan-500 dark:text-cyan-400 px-1 py-0.5 border border-zinc-200 dark:border-zinc-600 rounded-lg;
+}
+
+.prose pre code {
+  @apply text-gray-800 dark:text-gray-200 p-0;
+  border: initial;
+}
+
+.rehype-code-title {
+  @apply px-5 py-2 font-sans text-sm  text-slate-600 bg-zinc-200/30 border border-slate-200 rounded-t-lg dark:text-slate-200 dark:border-slate-700 dark:bg-slate-900;
+}
+
+.rehype-code-title + pre {
+  @apply mt-0 rounded-t-none;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+.token.punctuation {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  @apply text-cyan-600 dark:text-cyan-500;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  @apply text-teal-500;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  @apply text-lime-600 dark:text-lime-300;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  @apply text-blue-500;
+}
+
+.token.function,
+.token.class-name {
+  @apply text-indigo-600 dark:text-emerald-300;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  @apply text-lime-400;
+}

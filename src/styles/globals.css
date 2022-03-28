@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.blob {
+  background-image: radial-gradient(
+    circle 800px at 300px 100px,
+    hsl(197, 57%, 18%),
+    hsl(0 0% 0.5%)
+  );
+}
+
+@media screen and (max-width: 640px) {
+  .blob {
+    background-image: radial-gradient(
+      circle 600px at 0px 130px,
+      hsl(197, 57%, 18%),
+      hsl(0 0% 0.5%)
+    );
+  }
+}
