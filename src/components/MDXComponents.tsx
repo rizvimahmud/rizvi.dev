@@ -1,13 +1,14 @@
-import NextImage, { ImageProps } from "next/image";
+import { ImageProps } from "next/image";
 import { ExternalLink } from "./ExternalLink";
+import { NextImage } from "./NextImage";
 import { NextLink } from "./NextLink";
 
 const Image = (props: ImageProps & { caption?: string }) => {
   return (
     <figure>
-      <NextImage alt={props.alt} {...props} className="rounded-lg" />
+      <NextImage alt={props.alt} {...props} />
       {props.caption && (
-        <figcaption className="mt-2 text-slate-600 dark:text-slate-300 italic">
+        <figcaption className="mt-2 text-slate-6 italic">
           {props.caption}
         </figcaption>
       )}

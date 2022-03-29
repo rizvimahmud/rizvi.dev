@@ -9,16 +9,23 @@ export const ProjectCard = ({
   project: Project;
   isPersonalWebsite?: boolean;
 }) => {
-  const { title, githubSource, url, image } = project;
+  const { title, summary, githubSource, url, image } = project;
 
   const LINK_STYLES =
     "flex gap-1 text-sm text-slate-4 hover:text-slate-2 transition-colors delay-150 ease-in";
 
   return (
     <div className="mt-6">
-      <h3 className="text-xl font-semibold text-slate-3 pb-3">{title}</h3>
-      <div className="my-4 px-3 py-3 bg-primary rounded-xl overflow-hidden">
-        <NextImage src={image!} alt="Personal Website" priority={true} />
+      <h3 className="text-xl font-semibold text-slate-3 pb-2">{title}</h3>
+      <p className="text-base font-normal text-slate-5 pb-4">{summary}</p>
+      <div className="aspect-w-5 aspect-h-3 rounded-lg overflow-hidden my-4 border border-slate-5">
+        <NextImage
+          src={image!}
+          alt="Personal Website"
+          layout="fill"
+          objectFit="cover"
+          priority={true}
+        />
       </div>
       <div className="flex flex-row items-center gap-8 mt-3">
         <ExternalLink href={githubSource} showicon className={LINK_STYLES}>

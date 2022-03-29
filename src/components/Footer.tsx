@@ -1,4 +1,4 @@
-import { GITHUB_PROFILE } from "~/lib/constants";
+import { TWITTER_HANDLE } from "~/lib/constants";
 import { ExternalLink } from "./ExternalLink";
 
 export const Footer = () => {
@@ -13,11 +13,11 @@ export const Footer = () => {
           </span>
           <span>
             <ExternalLink
-              href={GITHUB_PROFILE}
+              href={TWITTER_HANDLE}
               showicon
               className="inline-flex items-center gap-2 text-slate-5 text-base hover:text-slate-4"
             >
-              <span>Github</span>
+              <span>Twitter</span>
             </ExternalLink>
           </span>
         </div>
