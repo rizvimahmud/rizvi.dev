@@ -9,7 +9,7 @@ export default function Page({ posts }: { posts: Blog[] }) {
     <>
       <Head title="Blog - Rizvi Mahmud" />
       <Layout>
-        <div className="max-w-2xl mx-auto mb-24">
+        <div className="max-w-2xl mx-auto mb-32">
           <div className="text-left mb-12">
             <h1 className="text-[28px] font-bold text-slate-200 mb-5">Blog</h1>
             <p className="text-lg text-slate-400 leading-8 mt-4 mr-3">
