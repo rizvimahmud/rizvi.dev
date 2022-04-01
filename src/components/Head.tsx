@@ -7,7 +7,7 @@ interface MetaData {
 }
 
 const DOMAIN = "https://rizvi.vercel.app";
-const image = `${DOMAIN}/assets/logo.png`;
+const image = `${DOMAIN}/assets/logo/logo.png`;
 
 export const Head = (props: MetaData) => {
   const {
