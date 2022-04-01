@@ -30,6 +30,7 @@ export const Head = (props: MetaData) => {
       <meta property="og:description" content={description} />
       <meta property="keywords" content="rizvi mahmud, developer, design" />
       <meta name="twitter:url" content={DOMAIN} />
+      <meta name="twitter:image" content={image} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@mahmudRizvi5" />
       <meta name="twitter:title" content={title} />
