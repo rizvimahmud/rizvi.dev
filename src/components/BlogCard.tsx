@@ -8,7 +8,7 @@ export const BlogCard = ({ post }: { post: BlogExcerptType }) => {
 
   return (
     <Link href={`/blog/${slug}`}>
-      <a className="block px-6 py-5 rounded-lg bg-primary-dark hover:bg-primary/40 transition-colors delay-200 ease-linear cursor-pointer">
+      <a className="block px-6 py-5 rounded-lg border border-slate-8 hover:border-slate-7 transition-colors duration-150 ease-linear cursor-pointer">
         <h3 className="text-xl font-medium text-slate-2 pb-3">{title}</h3>
         <summary className="block pb-2 text-slate-4 tracking-wide leading-6">
           {summary}

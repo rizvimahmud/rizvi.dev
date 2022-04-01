@@ -6,8 +6,8 @@ interface MetaData {
   description?: string;
 }
 
-const DOMAIN = "";
-const image = `${DOMAIN}assets/logo.png`;
+const DOMAIN = "https://rizvi.vercel.app";
+const image = `${DOMAIN}/assets/logo.png`;
 
 export const Head = (props: MetaData) => {
   const {
@@ -22,7 +22,7 @@ export const Head = (props: MetaData) => {
     <NextHead>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={`https://${DOMAIN}${path}`} />
+      <link rel="canonical" href={`${DOMAIN}${path}`} />
       <meta name="robots" content="index, follow" />
       <meta property="og:url" content={DOMAIN} />
       <meta property="og:image" content={image} />

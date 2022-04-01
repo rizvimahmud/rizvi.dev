@@ -24,7 +24,6 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
               and Jamstack.
             </p>
           </section>
-
           <section className="mt-12 md:mt-16">
             <h2 className="text-xl font-bold text-slate-5 pb-4">Writting</h2>
             <Blogs posts={posts} />
