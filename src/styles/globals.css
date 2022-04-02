@@ -9,7 +9,7 @@ html {
 .blob {
   background-image: radial-gradient(
     circle 500px at 400px 30px,
-    hsl(197, 57%, 18%),
+    hsl(197, 57%, 13%),
     hsl(0 0% 0.5%)
   );
 }
@@ -18,7 +18,7 @@ html {
   .blob {
     background-image: radial-gradient(
       circle 400px at 80px 50px,
-      hsl(197, 57%, 18%),
+      hsl(197, 57%, 13%),
       hsl(0 0% 0.5%)
     );
   }
@@ -28,7 +28,7 @@ html {
   .blob {
     background-image: radial-gradient(
       circle 500px at 100px 50px,
-      hsl(197, 57%, 18%),
+      hsl(197, 57%, 13%),
       hsl(0 0% 0.5%)
     );
   }
